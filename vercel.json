@@ -1,0 +1,7 @@
+{
+  "framework": "nextjs",
+  "rewrites": [
+    { "source": "/api/auth/:path*", "destination": "/api/auth?__sub=:path*" },
+    { "source": "/api/inventory/:path*", "destination": "/api/inventory?__sub=:path*" }
+  ]
+}
